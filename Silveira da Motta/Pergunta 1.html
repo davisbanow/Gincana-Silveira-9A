@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pergunta 1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1">
+    <link rel="stylesheet" href="style.css">
+   
+  
+</head>
+  <p>Pergunta 1:</p>
+
+<body style="text-align: center;">
+  <h1> "Quanto é 1+1"</h1>
+  <button onclick="responder(2)"> 2 </button>
+  <button onclick="responder(8)"> 8 </button>
+  <button onclick="responder(4)"> 4 </button>
+  <button onclick="responder(3)">  3 </button>
+    <script>
+      const respostaCorreta = 2;
+      function responder(valor) {
+        if( valor === respostaCorreta){
+          window.location.href = "senha1.html";
+        } else {
+          window.location.href="espera1.html";
+
+        }
+      }
+    </script>
+     <img src="turma.png" alt="Turma" class="img-bottom">
+
+    <style>
+        .img-bottom {
+            position: fixed;
+            bottom: 10px;      
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;     
+        }
+    </style>
+   
+
+</body>
+
+</html>
