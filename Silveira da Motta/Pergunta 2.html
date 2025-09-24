@@ -1,48 +1,44 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pt-BR">
 <head>
     <title>Pergunta 2</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-   
-  
-</head>
-  <p>Pergunta 2:</p>
-
-<body style="text-align: center;">
-  <h1> "Qual o nome completo do nosso colégio?"</h1>
-  <button onclick="responder(1)"> Colégio Silveira da Mota </button>
-  <button onclick="responder(2)"> Colégio Municipal Silveira da Motta </button>
-  <button onclick="responder(3)"> Escola Silveira da Mota </button>
-  <button onclick="responder(4)"> Colégio Estadual Silveira da Motta </button>
-    
-    <script>
-
-      const respostaCorreta = 4 ;
-      function responder(valor) {
-        if( valor === respostaCorreta){
-          window.location.href = "senha2.html";
-        } else {
-          window.location.href="espera2.html";
-
-        }
-      }
-    </script>
-     <img src="turma.png" alt="Turma" class="img-bottom">
 
     <style>
         .img-bottom {
             position: fixed;
-            bottom: 10px;      
-            left: 50%;
-            transform: translateX(-50%);
-            width: 200px;     
+            bottom: 10px;
+            left: 100%;
+            transform: translateX(-100%);
+            width: 200px;
         }
     </style>
-   
 
+    <script>
+        const respostaCorreta = 4;
+        function responder(valor) {
+            if (valor === respostaCorreta) {
+                window.location.href = "senha2.html";
+            } else {
+                window.location.href = "espera2.html";
+            }
+        }
+    </script>
+</head>
+
+<body class="centralizado">
+    <p>Pergunta 2:</p>
+    <h1>Qual o nome completo do nosso colégio?</h1>
+
+    <div class="btn-group">
+        <button onclick="responder(1)">Colégio Silveira da Mota</button>
+        <button onclick="responder(2)">Colégio Municipal Silveira da Motta</button>
+        <button onclick="responder(3)">Escola Silveira da Mota</button>
+        <button onclick="responder(4)">Colégio Estadual Silveira da Motta</button>
+    </div>
+
+    <img src="turma.png" alt="Turma" class="img-bottom">
 </body>
-
 </html>
