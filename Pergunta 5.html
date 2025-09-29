@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Pergunta 5</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .img-bottom {
+            position: fixed;
+            bottom: 10px;
+            left: 100%;
+            transform: translateX(-100%);
+            width: 200px;
+        }
+    </style>
+
+    <script>
+        const respostaCorreta = 2;
+        function responder(valor) {
+            if (valor === respostaCorreta) {
+                window.location.href = "senha5.html";
+            } else {
+                window.location.href = "espera5.html";
+            }
+        }
+    </script>
+</head>
+
+<body class="centralizado">
+    <h1>Pergunta 4:</h1>
+    <h2> O texto abaixo serve de apoio para as questões 5 e 6</h2>
+    <p>O Impacto das redes sociais na sociedade moderna: As redes sociais revolucionaram a forma como nos 
+        comunicamos e compartilhamos informações. No entanto, a dependência dessas plataformas também trouxe
+         desafios significativos, como o aumento da desinformação e a superexposiçãao de dados pessoais. 
+         Ainda assim, o impacto positivo das redes sociais e inegável, permitindo conexões globais e o 
+         compartilhamento instantâneo de ideias. </p>
+    <p> No trecho "O impacto positivo das redes sociais é inegável", o que significa a expressão "impacto positivo":</p>
+
+    <div class="btn-group">
+        <button onclick="responder(1)">Influência negativa e prejudicial.</button>
+        <button onclick="responder(2)">Efeitos  benéficos e favoráveis.</button>
+        <button onclick="responder(3)">Consequências irrelevantes.</button>
+        <button onclick="responder(4)">Resultados inesperados</button>
+    </div>
+
+    <img src="turma.png" alt="Turma" class="img-bottom">
+</body>
+</html>

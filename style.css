@@ -1,8 +1,7 @@
-
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-  background: #f9fafb;
+  background-color: rgb(255, 236, 212); /* cor fixa para TODAS as resoluções */
   font-size: 16px;
   padding: 10px;
 }
@@ -15,7 +14,6 @@ body {
   max-width: 90%;
   margin: auto;
 }
-
 
 .btn-group {
   display: grid;
@@ -44,7 +42,6 @@ body {
   background: linear-gradient(135deg, #2563eb, #1d4ed8);
 }
 
-
 @media (max-width: 500px) {
   .btn-group {
     grid-template-columns: 1fr;
@@ -58,10 +55,8 @@ body {
   }
 }
 
-
 @media (min-width: 1025px) {
   body {
-    background-color: rgb(255, 236, 212);
     font-size: 20px;
     padding: 30px;
   }
