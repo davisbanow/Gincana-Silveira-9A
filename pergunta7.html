@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Pergunta 7</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .img-bottom {
+            position: fixed;
+            bottom: 10px;
+            left: 100%;
+            transform: translateX(-100%);
+            width: 200px;
+        }
+    </style>
+
+    <script>
+        const respostaCorreta = 4;
+        function responder(valor) {
+            if (valor === respostaCorreta) {
+                window.location.href = "senha7.html";
+            } else {
+                window.location.href = "espera7.html";
+            }
+        }
+    </script>
+</head>
+
+<body class="centralizado">
+    <h1>Pergunta 7:</h1>
+
+    <p>O modelo atômico proposto por Rutherford, em 1911, foi comparado a um sistema planetário, em que o núcleo atômico representa o Sol e os elétrons, organizados na eletrosfera, orbitam ao seu redor como os planetas orbitam o Sol.</p>
+    <p>Eletrosfera é a região do átomo que:</p>
+
+    <div class="btn-group">
+        <button onclick="responder(1)">Concentra praticamente toda a massa do átomo.</button>
+        <button onclick="responder(2)">Contém nêutrons, que são cargas eletromagnéticas.</button>
+        <button onclick="responder(3)">Contém as partículas de carga elétrica positiva chamadas de prótons.</button>
+        <button onclick="responder(4)">Contém as partículas de carga elétrica negativa, os elétrons.</button>
+    </div>
+
+    <img src="turma.png" alt="Turma" class="img-bottom">
+</body>
+</html>

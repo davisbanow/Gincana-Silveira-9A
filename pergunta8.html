@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Pergunta 8</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .img-bottom {
+            position: fixed;
+            bottom: 10px;
+            left: 100%;
+            transform: translateX(-100%);
+            width: 200px;
+        }
+    </style>
+
+    <script>
+        const respostaCorreta = 2;
+        function responder(valor) {
+            if (valor === respostaCorreta) {
+                window.location.href = "senha8.html";
+            } else {
+                window.location.href = "espera8.html";
+            }
+        }
+    </script>
+</head>
+
+<body class="centralizado">
+    <h1>Pergunta 8:</h1>
+
+    <p>Um núcleo de um átomo pode ser definido como:</p>
+   
+
+    <div class="btn-group">
+        <button onclick="responder(1)">Uma região pequena e neutra, pois é constituída apenas das partículas chamadas de nêutrons.</button>
+        <button onclick="responder(2)">Uma pequena e densa região central, que é responsável por praticamente toda a massa do átomo.</button>
+        <button onclick="responder(3)">Uma região do átomo sem carga, visto que as partículas positivas e nagtivas se anulam neste espaço.</button>
+        <button onclick="responder(4)">Uma grande região carregada positivamente, pois é formada apenas por prótons.</button>
+    </div>
+
+    <img src="turma.png" alt="Turma" class="img-bottom">
+</body>
+</html>
