@@ -42,9 +42,25 @@ body {
   background: linear-gradient(135deg, #2563eb, #1d4ed8);
 }
 
+/* imagem no canto inferior direito */
+.img-bottom {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 120px;
+  height: auto;
+  max-width: 25vw;
+  z-index: 10;
+  pointer-events: none;
+}
+
 @media (max-width: 500px) {
   .btn-group {
     grid-template-columns: 1fr;
+  }
+
+  .img-bottom {
+    width: 80px; /* menor em celulares */
   }
 }
 
